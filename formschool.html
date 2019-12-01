@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Form School</title>
+
+</head>
+
+<body>
+    <center><h2>เช็คการมาโรงเรียน</h2></center>
+    <center>
+    <table style="width:20%">
+        <tr>
+            
+            <th align="left">
+                <form action="/school/savefile.php" method="post">
+                    เพศ :<br />
+                    <input type="radio" name="gender" value="male"> ชาย<br />
+                    <input type="radio" name="gender" value="female"checked> หญิง<br />
+                    ชื่อ-นามสกุล :<br />
+                    <input type="text" id="name" name="name" placeholder="ภาษาไทย"/><br />
+                    รหัสนักเรียน :<br/>
+                    <input type="number" id="number" name="number" /><br />
+                    กลุ่มวิชา : <br />
+                    <select name="section">
+                        <option value="eng">อังกฤษ</option>
+                        <option value="science-math">วิทย์-คณิต</option>
+                        <option value="science-art">วิทย์-ศิลป์</option>
+                        <option value="art-eng">ศิลป์-ภาษาอังกฤษ</option>
+                        </select><br />
+                    ชั้นมัธยมศึกษาปีที่ : <br />
+                    <select name="degree">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        </select><br />
+                        <br />
+                        <input type="submit" value="ส่งข้อมูล" onclick="ShowPassword();" />
+                        <input type="reset" value="เคลียร์" />
+                </form>  
+            </th>
+        </tr>
+    </table>
+</center>
+<a href="http://localhost/school/show.php">แสดงข้อมูลทั้งหมด</a>
+</br>
+</body>
+
+
+</body>
+
+</html>
